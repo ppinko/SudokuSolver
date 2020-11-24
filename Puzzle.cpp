@@ -33,3 +33,12 @@ void Puzzle::PrintCurrentState(){
 void Puzzle::PrintSolution(){
     PrintState(solution);
 };
+
+bool Puzzle::IsSolved() const
+{
+    for (auto const &row : solution){
+        if (std::any_of(row.cbegin(), row.cend(), 0))
+            return false;
+    }
+    return true;
+}

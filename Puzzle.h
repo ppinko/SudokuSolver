@@ -9,7 +9,7 @@
 
 class Puzzle
 {
-private:
+public:
     std::vector<std::vector<int>> initialPuzzle;
     std::vector<std::vector<int>> puzzle;
     std::vector<std::vector<int>> solution;
@@ -24,6 +24,8 @@ public:
     void PrintCurrentState();
 
     void PrintSolution();
+
+    bool IsSolved() const;
 };
 
 #endif
