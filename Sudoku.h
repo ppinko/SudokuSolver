@@ -33,6 +33,12 @@ public:
 
 	void InitSetUp();
 
+	// NEW PARAMETERS //
+
+	std::vector<std::vector<std::set<int>>> r;
+	std::vector<std::vector<std::set<int>>> c;
+	std::vector<std::vector<std::set<int>>> b;
+
 	
 };
 
