@@ -17,9 +17,6 @@ private:
 public:
 	Solver();
 
-
-
-
 };
 
 #endif

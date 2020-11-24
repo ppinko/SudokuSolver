@@ -10,7 +10,7 @@
 class Puzzle
 {
 private:
-    const std::vector<std::vector<int>> initialPuzzle;
+    std::vector<std::vector<int>> initialPuzzle;
     std::vector<std::vector<int>> puzzle;
     std::vector<std::vector<int>> solution;
 

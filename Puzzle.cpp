@@ -1,8 +1,10 @@
 #include "Puzzle.h"
 
-Puzzle::Puzzle(std::vector<std::vector<int>> _puzzle):
-    puzzle {_puzzle}, initialPuzzle {_puzzle}, solution {_puzzle}
+Puzzle::Puzzle(std::vector<std::vector<int>> _puzzle)  
 {
+    puzzle = _puzzle;
+    initialPuzzle = _puzzle;
+    solution = _puzzle;
 };
 
 void Puzzle::PrintState(std::vector<std::vector<int>> const &state){
