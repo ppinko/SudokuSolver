@@ -115,5 +115,11 @@ int main(int argc, char *argv[])
 
     p1.PrintCurrentState();
 
+    Solver p1solved (p1);
+
+    std::cout << std::endl << std::endl << "###############################" << std::endl << std::endl;
+
+    p1solved.SolvePuzzle();
+
     return 0;
 }

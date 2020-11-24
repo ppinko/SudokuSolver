@@ -14,8 +14,8 @@ main.o: main.cpp
 Sudoku.o: Sudoku.cpp
 	$(CC) $(CFLAGS) Sudoku.cpp
 
-Solver.o: Solver.cpp
-	$(CC) $(CFLAGS) Solver.cpp
+Solver.o: Solver.cpp Puzzle.o
+	$(CC) $(CFLAGS) Solver.cpp Puzzle.o
 
 Puzzle.o: Puzzle.cpp
 	$(CC) $(CFLAGS) Puzzle.cpp
